@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -116,14 +114,9 @@ html = """<!DOCTYPE html>
       </div>
 
       <footer>
-        SmartShopper — Smarter Lists - Contact Us At smart.shopper.app.2026@gmail.com
+        SmartShopper — Smarter Lists
       </footer>
     </div>
   </main>
 </body>
 </html>
-"""
-
-path = Path("/mnt/data/delete-account.html")
-path.write_text(html, encoding="utf-8")
-print(f"Created: {path}")
