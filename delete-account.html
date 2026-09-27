@@ -1,0 +1,129 @@
+from pathlib import Path
+
+html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your SmartShopper Account</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .card {
+      background: #121c2e;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 21px;
+    }
+
+    .brand {
+      color: #4da3ff;
+      font-weight: 700;
+    }
+
+    .steps {
+      padding-left: 24px;
+    }
+
+    .note {
+      background: #18263d;
+      border-left: 4px solid #4da3ff;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #69b0ff;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: #aeb8c8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>Delete Your <span class="brand">SmartShopper</span> Account</h1>
+
+      <p>
+        You can request deletion of your SmartShopper account and associated data.
+      </p>
+
+      <h2>Delete your account in the app</h2>
+
+      <ol class="steps">
+        <li>Open the SmartShopper app.</li>
+        <li>Open your <strong>Profile</strong>.</li>
+        <li>Open the account/settings section.</li>
+        <li>Select <strong>Delete Account</strong>.</li>
+        <li>Follow the confirmation steps shown in the app.</li>
+      </ol>
+
+      <h2>Can't access the app?</h2>
+
+      <p>
+        If you cannot access SmartShopper, you can request account deletion by
+        contacting SmartShopper support through the support email address listed
+        on the app's Google Play listing.
+      </p>
+
+      <h2>What data is deleted?</h2>
+
+      <p>
+        When your account is deleted, SmartShopper deletes the account and
+        associated user data, including account information, shopping lists,
+        saved stores, and shopping history associated with that account.
+      </p>
+
+      <h2>Data that may be retained</h2>
+
+      <p>
+        Certain information may be retained for a limited period when required
+        for legal, security, fraud-prevention, or other legitimate purposes.
+        Any such information will be retained only for the period required for
+        that purpose.
+      </p>
+
+      <div class="note">
+        <strong>Important:</strong> Account deletion is permanent and cannot be
+        undone. Make sure you want to delete your account before confirming.
+      </div>
+
+      <footer>
+        SmartShopper — Smarter Lists - Contact Us At smart.shopper.app.2026@gmail.com
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
+"""
+
+path = Path("/mnt/data/delete-account.html")
+path.write_text(html, encoding="utf-8")
+print(f"Created: {path}")
