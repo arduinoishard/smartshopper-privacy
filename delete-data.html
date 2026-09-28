@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion Request - Smart Shopper</title>
+    <style>
+        :root {
+            --primary-bg: #0A0E1A;
+            --card-bg: #141B2D;
+            --accent-blue: #0066FF;
+            --text-primary: #FFFFFF;
+            --text-secondary: #8E9BB0;
+            --danger-red: #FF5252;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 40px auto;
+            background-color: var(--card-bg);
+            padding: 36px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin: 12px 0 6px 0;
+            color: var(--text-primary);
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--accent-blue);
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        .steps-box {
+            background-color: rgba(0, 102, 255, 0.08);
+            border-left: 4px solid var(--accent-blue);
+            padding: 18px 20px;
+            border-radius: 12px;
+            margin: 16px 0;
+        }
+
+        .steps-box ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .steps-box li {
+            margin-bottom: 8px;
+        }
+
+        .steps-box li:last-child {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 14px;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .tag-deleted {
+            color: var(--danger-red);
+            font-weight: bold;
+        }
+
+        .tag-retained {
+            color: #FFB703;
+            font-weight: bold;
+        }
+
+        .contact-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 14px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .contact-card a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🛒 Smart Shopper</h1>
+            <p>Account & User Data Deletion Request</p>
+        </div>
+
+        <h2>Overview</h2>
+        <p>
+            At <strong>Smart Shopper</strong>, we respect your privacy and give you full control over your personal data. 
+            You can request the permanent deletion of your account and all associated data at any time directly through the app or by submitting a web request below.
+        </p>
+
+        <h2>Option 1: In-App Instant Deletion (Recommended)</h2>
+        <p>You can permanently delete your account and all stored shopping data directly inside the <strong>Smart Shopper</strong> Android application:</p>
+        
+        <div class="steps-box">
+            <ol>
+                <li>Open the <strong>Smart Shopper</strong> app on your device.</li>
+                <li>Tap the <strong>Profile & Account</strong> tab at the bottom right.</li>
+                <li>Scroll down and tap <strong style="color: var(--danger-red);">Delete Account & Data</strong>.</li>
+                <li>Confirm the prompt by tapping <strong>Delete Everything</strong>.</li>
+            </ol>
+        </div>
+        <p style="font-size: 13px; color: var(--text-secondary);">
+            * In-app deletion is processed <strong>immediately</strong> and clears all your data from our servers.
+        </p>
+
+        <h2>Option 2: Web / Email Deletion Request</h2>
+        <p>If you no longer have the app installed or cannot access your device, you may submit a manual deletion request to our team:</p>
+        
+        <div class="contact-card">
+            <p style="margin: 0 0 10px 0;">Send an email request to:</p>
+            <p style="font-size: 18px; margin: 0 0 10px 0;">
+                <a href="mailto:contact@smartshopper.app?subject=Smart%20Shopper%20Data%20Deletion%20Request">contact@smartshopper.app</a>
+            </p>
+            <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
+                Subject: <strong>Smart Shopper Data Deletion Request</strong><br>
+                Please include your display name or account email associated with Smart Shopper. Manual requests are processed within <strong>7 business days</strong>.
+            </p>
+        </div>
+
+        <h2>Data Types Deleted vs. Retained</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Category</th>
+                    <th>Action Taken</th>
+                    <th>Retention Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Shopping Lists & Items</strong></td>
+                    <td><span class="tag-deleted">Permanently Deleted</span></td>
+                    <td>Erased immediately from Firebase Firestore database.</td>
+                </tr>
+                <tr>
+                    <td><strong>User Profile & Display Name</strong></td>
+                    <td><span class="tag-deleted">Permanently Deleted</span></td>
+                    <td>Erased immediately upon account deletion.</td>
+                </tr>
+                <tr>
+                    <td><strong>Authentication Credentials</strong></td>
+                    <td><span class="tag-deleted">Permanently Deleted</span></td>
+                    <td>Firebase Auth account deleted permanently.</td>
+                </tr>
+                <tr>
+                    <td><strong>Purchase Entitlement Token</strong></td>
+                    <td><span class="tag-retained">Retained (Anonymized)</span></td>
+                    <td>Google Play order IDs kept in Google Play Console for legal financial compliance and refund audits.</td>
+                </tr>
+                <tr>
+                    <td><strong>System Crash Logs</strong></td>
+                    <td><span class="tag-retained">Anonymized (90 Days)</span></td>
+                    <td>Non-identifying technical crash reports retained in Firebase Crashlytics for 90 days, then auto-purged.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>&copy; Smart Shopper App. All rights reserved. Package: <code>com.smartshopper.android</code></p>
+        </div>
+    </div>
+
+</body>
+</html>
